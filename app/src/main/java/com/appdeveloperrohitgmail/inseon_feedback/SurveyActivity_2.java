@@ -7,17 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.hsalf.smilerating.SmileRating;
 
-public class Survey_Activity1 extends AppCompatActivity {
+public class SurveyActivity_2 extends AppCompatActivity {
 
-    ImageButton next1,back1;
+    ImageButton next2,back2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_survey_1);
+        setContentView(R.layout.activity_survey_2);
         final SmileRating smileRating=(SmileRating)findViewById(R.id.smiley_rating);
         smileRating.setOnSmileySelectionListener(new SmileRating.OnSmileySelectionListener() {
             @Override
@@ -30,33 +30,33 @@ public class Survey_Activity1 extends AppCompatActivity {
                     case SmileRating.TERRIBLE:
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        frag1_low f1 =  new frag1_low();
+                        Frag2_low f1 =  new Frag2_low();
                         fragmentTransaction.replace(R.id.fragment_container,f1).commit();
                         break;
                     case SmileRating.GREAT:
                         FragmentManager fragmentManager1 = getSupportFragmentManager();
                         FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
-                        Frag1_high f2 =  new Frag1_high();
+                        Frag2_high f2 =  new Frag2_high();
                         fragmentTransaction1.replace(R.id.fragment_container,f2).commit();
                         break;
                 }
             }
         });
 
-        next1=(ImageButton)findViewById(R.id.next_Button1);
-        next1.setOnClickListener(new View.OnClickListener() {
+        next2=(ImageButton)findViewById(R.id.next_Button2);
+        next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next_i = new Intent(Survey_Activity1.this,SurveyActivity_2.class);
+                Intent next_i = new Intent(SurveyActivity_2.this,Survey_Activity1.class);
                 startActivity(next_i);
             }
         });
 
-        back1 = (ImageButton)findViewById(R.id.back_Button1);
-        back1.setOnClickListener(new View.OnClickListener() {
+        back2 = (ImageButton)findViewById(R.id.back_Button2);
+        back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent back_i = new Intent(Survey_Activity1.this,Order_Activity1.class);
+                Intent back_i = new Intent(SurveyActivity_2.this,Survey_Activity1.class);
                 startActivity(back_i);
             }
         });

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    >
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/q1"
         android:layout_width="wrap_content"
@@ -22,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="10sp"
-        android:text="Had to wait long time for checkin / cheeckout" />
+        android:text="Room was not well equipped with furniture, lighting " />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -30,7 +25,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="10sp"
-        android:text="Reception staff was not hospitable and friendly" />
+        android:text="Room and bathroom were not very clean" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -38,7 +33,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="10sp"
-        android:text="Luggage eas not properly taken care of" />
+        android:text="Bed Linen and towels were not compfortable or clean " />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -46,7 +41,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="10sp"
-        android:text="Was over charged by the hotel"/>
+        android:text="Room lacked aminities like shower cups toothpaste"/>
 
 
     <CheckBox
@@ -55,8 +50,23 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="10sp"
-        android:text="Payment method was not available" />
+        android:text="Room location and view from the room was not good" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Room size"/>
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Air-conditioning was not upto the mark"/>
 
 </LinearLayout>
-
-</RelativeLayout>
